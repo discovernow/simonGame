@@ -1,5 +1,5 @@
 # simonGame
-Created Simon Game using HTML, CSS and jQuery
+An interactive Simon Game written in jQuery, HTML and CSS to simulate the classic Simon Memory Game.
 
 To play THE SIMON GAME -
 1. Clone this repository 
