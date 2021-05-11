@@ -31,13 +31,18 @@ function nextSequence() {
   var randomNumber = Math.floor(4 * Math.random());
   var randomChosenColor = buttonColors[randomNumber];
   gamePattern.push(randomChosenColor);
-  $("#" + randomChosenColor)
+  
+  //Adding buffer between levels
+  setTimeout(function () {
+    $("#" + randomChosenColor)
     .fadeOut(100)
     .fadeIn(100)
     .fadeOut(100)
     .fadeIn(100);
-  playSound(randomChosenColor);
-  animatePress(randomChosenColor);
+    playSound(randomChosenColor);
+    animatePress(randomChosenColor);
+  }, 400);
+
   level++;
   $("h1").text("Level " + level);
 }
